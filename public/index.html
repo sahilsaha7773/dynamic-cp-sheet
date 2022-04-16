@@ -9,7 +9,21 @@
       content="Track your progress through striver's CP sheet"
     />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>CP sheet tracker</title>
+    <title>Dynamic CP Sheet</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SJVCBZ1T5D"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SJVCBZ1T5D");
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
