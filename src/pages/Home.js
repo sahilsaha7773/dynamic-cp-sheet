@@ -344,7 +344,7 @@ function Home() {
                           <Badge
                             bg={problem.verdict === "OK" ? "success" : "danger"}
                           >
-                            {problem.verdict}
+                            {problem.verdict === "OK" ? "AC" : problem.verdict}
                           </Badge>
                         </h5>
                       ) : (
