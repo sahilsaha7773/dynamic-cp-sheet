@@ -159,7 +159,7 @@ function Home() {
     <div>
       <GithubCorner
         size={100}
-        href="https://github.com/username/repo"
+        href="https://github.com/sahilsaha7773/dynamic-cp-sheet"
         // bannerColor="white"
         // octoColor="black"
       />
