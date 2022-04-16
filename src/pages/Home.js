@@ -61,6 +61,10 @@ function Home() {
       const cfInfoJson = await cfInfo.json();
       if (cfInfoJson.status === "OK") {
         setCfAcc(cfInfoJson.result[0]);
+      } else if (cfInfoJson.status === "FAILED") {
+        setError(cfInfoJson.comment);
+        setIsLoading(false);
+        return;
       } else {
         setError(
           "Seems like Codeforces API is down at the moment, please try again after some time"
@@ -165,7 +169,9 @@ function Home() {
       />
       <div className={styles.topWrapper}>
         <div className={styles.usernameCard}>
-          <h3 style={{ marginBottom: "20px" }}>Striver’s CP Sheet Tracker</h3>
+          <h3 style={{ marginBottom: "20px", textAlign: "center" }}>
+            Dynamic Striver’s CP Sheet
+          </h3>
           {error.length > 0 && (
             <Alert variant="danger" onClose={() => setError("")} dismissible>
               <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
