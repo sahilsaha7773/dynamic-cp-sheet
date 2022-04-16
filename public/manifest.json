@@ -1,6 +1,6 @@
 {
-  "short_name": "CP sheet tracker",
-  "name": "Striver's CP sheet tracker",
+  "short_name": "Dynamic CP Sheet",
+  "name": "Striver's Dynamic CP Sheet",
   "icons": [],
   "start_url": ".",
   "display": "standalone",
