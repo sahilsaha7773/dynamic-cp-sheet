@@ -105,6 +105,9 @@ th {
   .notAccP {
     margin-bottom: 0px !important;
   }
+  .cfImage {
+    margin-right: 0 !important;
+  }
 }
 
 ::-webkit-scrollbar {

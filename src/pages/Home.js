@@ -173,7 +173,7 @@ function Home() {
             </Alert>
           )}
           <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3">
               <FloatingLabel
                 controlId="floatingInput"
                 label="Codeforces Username"
@@ -213,6 +213,7 @@ function Home() {
               onClick={(e) => handleSubmit(e)}
               size="lg"
               style={{ width: "100%", marginBottom: "20px" }}
+              type="submit"
             >
               See Problems
             </Button>
@@ -252,6 +253,7 @@ function Home() {
               style={{
                 display: "flex",
                 flexWrap: "wrap",
+                justifyContent: "center",
               }}
             >
               <Image
@@ -259,9 +261,16 @@ function Home() {
                 style={{ margin: "0 20px 0 0" }}
                 fluid
                 thumbnail
+                className={styles.cfImage}
               />
               <div>
-                <p style={{ textAlign: "left", marginBottom: "8px" }}>
+                <p
+                  style={{
+                    textAlign: "left",
+                    marginBottom: "8px",
+                    marginTop: "8px",
+                  }}
+                >
                   {cfAcc.rank}
                 </p>
                 <Card.Title>
