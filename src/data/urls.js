@@ -1,4 +1,4 @@
-var problems = {
+var urls = {
   "data": [
     {
       "data": [
@@ -129,7 +129,7 @@ var problems = {
     },
     {
       "data": [
-        "https://www.spoj.com/problems/PRIME1/cstart=10",
+        "https://www.spoj.com/problems/PRIME1/",
         "https://www.spoj.com/problems/TDPRIMES/",
         "https://www.spoj.com/problems/TDKPRIME/",
         "https://codeforces.com/contest/264/problem/B",
@@ -405,4 +405,4 @@ var problems = {
 }
 
 
-export default problems
+export default urls

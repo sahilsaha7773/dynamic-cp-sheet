@@ -1,18 +1,23 @@
+html,
+body,
+#root,
+.App {
+  /* height: 100%; */
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #020638;
-  color: white; */
-  background: #232325 !important;
-  /* background: rgb(2, 0, 36); */
-  /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%, rgba(0, 212, 255, 1) 100%); */
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='3.3'%3E%3Cpath transform='translate(-8.75 2) rotate(1.25 1409 581) scale(1.005)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='1.1' transform='translate(-5 5) rotate(1.5 800 450) scale(1.003)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(4.5 -15) rotate(15 401 736) scale(1.003)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='1'%3E%3Cpath transform='translate(30 -2) rotate(0.5 150 345) scale(0.995)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='2.2' transform='translate(-20 -12.5) rotate(18 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-30 10) rotate(3 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c407.192C83.875%2c407.544%2c174.389%2c426.493%2c245.193%2c381.527C316.087%2c336.504%2c350.728%2c251.312%2c372.967%2c170.328C393.047%2c97.206%2c362.061%2c23.41%2c364.348%2c-52.385C367.272%2c-149.32%2c439.77%2c-254.26%2c388.255%2c-336.425C337.96%2c-416.645%2c218.376%2c-407.838%2c126.685%2c-431.451C38.251%2c-454.225%2c-51.191%2c-498.466%2c-138.625%2c-472.112C-225.89%2c-445.809%2c-276.229%2c-359.945%2c-336.723%2c-291.772C-397.978%2c-222.741%2c-467.149%2c-159.248%2c-494.469%2c-71.094C-524.516%2c25.86%2c-546.903%2c138.525%2c-497.567%2c227.231C-448.64%2c315.202%2c-338.535%2c345.238%2c-243.874%2c379.475C-165.346%2c407.877%2c-83.505%2c406.842%2c0%2c407.192' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1440 1177.6309999999999C1555.012 1173.0259999999998 1605.868 1028.259 1691.502 951.345 1760.964 888.956 1843.0529999999999 845.183 1895.862 768.185 1956.522 679.74 2030.6219999999998 583.422 2016.783 477.071 2002.926 370.577 1903.383 299.871 1825.327 226.113 1754.1109999999999 158.81799999999998 1674.743 106.20999999999998 1584.336 68.43599999999998 1484.402 26.68100000000004 1381.794-17.868000000000052 1274.367-4.092999999999961 1157.874 10.844000000000051 1041.809 59.56400000000002 964.4359999999999 147.92200000000003 886.908 236.457 878.605 360.653 854.163 475.769 827.954 599.207 747.936 738.802 816.481 844.752 886.826 953.483 1060.973 911.025 1175.214 972.015 1275.8319999999999 1025.732 1326.032 1182.194 1440 1177.6309999999999' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"); */
 }

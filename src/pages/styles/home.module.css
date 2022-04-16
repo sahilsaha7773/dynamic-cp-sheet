@@ -1,43 +1,7 @@
-.problems {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 80%;
-  margin: auto;
-  /* border-radius: 20px; */
-}
-
-.problems td,
-.problems th {
-  border: 3px solid #ffffff;
-  padding: 8px;
-}
-
-.problems tr:nth-child(even) {
-  /* background-color: #f2f2f2; */
-}
-
-.problems tr:hover {
-  /* background-color: #ddd; */
-}
-
-.problems th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04AA6D;
-  color: white;
-  font-size: 25px;
-}
-
 .green {
   background-color: rgb(98 187 0) !important;
   color: white !important;
 }
-
-.problems a {
-  /* color: white; */
-}
-
 .green a,
 .red a {
   color: white;
@@ -52,27 +16,110 @@
   background-color: rgb(255, 99, 71) !important;
   color: white !important;
 }
-
+.solvedP {
+  background: #18ab25;
+  font-weight: bold;
+  margin-top: 20px;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  width: fit-content;
+}
+.notAccP {
+  background: #d33737;
+  font-weight: bold;
+  margin-top: 20px;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  width: fit-content;
+}
+.infoP {
+  background: #2296c4;
+  font-weight: bold;
+  margin-top: 20px;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  width: fit-content;
+}
+.tagsContainer > p {
+  margin-left: 10px;
+}
+.tagsContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+}
 .topicContainer {
-  max-width: 1000px;
-  margin: 40px auto;
+  max-width: 1200px;
+  margin: 60px auto;
   background-color: white;
   padding: 40px;
   border-radius: 20px;
+  box-shadow: 2px 2px 20px rgb(0, 0, 0, 0.2);
 }
-.topicContainer > h2, p {
+.topicContainer > h2,
+p {
   text-align: center;
-
 }
-
 .problemsTable {
   margin-top: 40px;
+  text-align: center;
 }
 
 .usernameCard {
   background-color: white;
   padding: 40px;
-  max-width: 500px;
-  margin: 40px auto;
-  border-radius: 20px;
+  max-width: 800px;
+  margin: 100px auto 0 auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px rgb(0, 0, 0, 0.2);
+}
+
+th {
+  font-size: 20px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .topicContainer {
+    margin: 30px 10px;
+  }
+
+  .usernameCard {
+    margin: 100px auto 0;
+  }
+
+  .topWrapper {
+    margin: 0 30px;
+  }
+  .cfInfoCard {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  .infoP,
+  .solvedP,
+  .notAccP {
+    margin-bottom: 0px !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: inherit !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(73, 73, 73);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(204, 204, 204);
+  cursor: pointer !important;
 }
