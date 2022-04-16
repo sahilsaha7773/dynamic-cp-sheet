@@ -28,7 +28,7 @@ Make sure you have docker installed on your machine.
 - Clone the repo.
 - Inside the project directory run :
   ```cmd
-    docker build -t cp-sheet:0.0.1 .
+  docker build -t cp-sheet:0.0.1 .
   ```
   You can replace cp-sheet:0.0.1 with the tag name you want.
 - After succesfully building the docker image, run the image using this command:
